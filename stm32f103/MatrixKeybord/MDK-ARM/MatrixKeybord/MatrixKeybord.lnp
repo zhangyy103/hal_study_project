@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"matrixkeybord\startup_stm32f103xe.o"
+"matrixkeybord\keyboard.o"
+"matrixkeybord\main.o"
+"matrixkeybord\gpio.o"
+"matrixkeybord\usart.o"
+"matrixkeybord\stm32f1xx_it.o"
+"matrixkeybord\stm32f1xx_hal_msp.o"
+"matrixkeybord\stm32f1xx_hal_gpio_ex.o"
+"matrixkeybord\stm32f1xx_hal_tim.o"
+"matrixkeybord\stm32f1xx_hal_tim_ex.o"
+"matrixkeybord\stm32f1xx_hal_uart.o"
+"matrixkeybord\stm32f1xx_hal.o"
+"matrixkeybord\stm32f1xx_hal_rcc.o"
+"matrixkeybord\stm32f1xx_hal_rcc_ex.o"
+"matrixkeybord\stm32f1xx_hal_gpio.o"
+"matrixkeybord\stm32f1xx_hal_dma.o"
+"matrixkeybord\stm32f1xx_hal_cortex.o"
+"matrixkeybord\stm32f1xx_hal_pwr.o"
+"matrixkeybord\stm32f1xx_hal_flash.o"
+"matrixkeybord\stm32f1xx_hal_flash_ex.o"
+"matrixkeybord\stm32f1xx_hal_exti.o"
+"matrixkeybord\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "MatrixKeybord\MatrixKeybord.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MatrixKeybord.map" -o MatrixKeybord\MatrixKeybord.axf

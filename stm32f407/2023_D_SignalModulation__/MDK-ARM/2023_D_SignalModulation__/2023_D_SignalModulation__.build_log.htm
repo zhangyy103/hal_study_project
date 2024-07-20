@@ -1,0 +1,2158 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Zhang Xuyang, HP Inc., LIC=UJWP0-B8BTC-Z96G9-41BRA-5EIBY-FHHVK
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
+Toolchain Path:  D:\keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\stm32cube\stm32f407\2023_D_SignalModulation__\MDK-ARM\2023_D_SignalModulation__.uvprojx
+Project File Date:  06/09/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\keil5\ARM\ARMCC\Bin'
+Rebuild target '2023_D_SignalModulation__'
+assembling startup_stm32f407xx.s...
+compiling stm32f4xx_ll_adc.c...
+compiling usart.c...
+compiling fsmc.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_it.c...
+compiling dac.c...
+compiling gpio.c...
+compiling adc.c...
+compiling dma.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_adc.c...
+compiling main.c...
+compiling stm32f4xx_hal_adc_ex.c...
+compiling ILI93xx.c...
+compiling stm32f4xx_hal_dac.c...
+compiling stm32f4xx_hal_exti.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_ll_fsmc.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_dac_ex.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling BasicMathFunctions.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/BasicMathFunctions/BasicMathFunctions.c: 9 warnings, 28 errors
+compiling stm32f4xx_hal_dma_ex.c...
+compiling BasicMathFunctionsF16.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/BasicMathFunctions/BasicMathFunctionsF16.c: 9 warnings, 28 errors
+compiling BayesFunctions.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/BayesFunctions/BayesFunctions.c: 9 warnings, 28 errors
+compiling BayesFunctionsF16.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/BayesFunctions/BayesFunctionsF16.c: 9 warnings, 28 errors
+compiling CommonTables.c...
+../Drivers/CMSIS/Include/core_cm4.h(81): error:  #35: #error directive: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+        #error "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/CommonTables/CommonTables.c: 0 warnings, 1 error
+compiling ComplexMathFunctionsF16.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/ComplexMathFunctions/ComplexMathFunctionsF16.c: 9 warnings, 28 errors
+compiling ComplexMathFunctions.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/ComplexMathFunctions/ComplexMathFunctions.c: 9 warnings, 28 errors
+compiling CommonTablesF16.c...
+compiling ControllerFunctions.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/controller_functions.h(229): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/controller_functions.h(247): error:  #757: function "int32_t"  is not a type name
+          int32_t resetStateFlag);
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/ControllerFunctions/ControllerFunctions.c: 9 warnings, 30 errors
+compiling DistanceFunctions.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/distance_functions.h(223): error:  #757: function "int32_t"  is not a type name
+  float32_t arm_minkowski_distance_f32(const float32_t *pA,const float32_t *pB, int32_t order, uint32_t blockSize);
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/DistanceFunctions/arm_minkowski_distance_f32.c(167): error:  #757: function "int32_t"  is not a type name
+  float32_t arm_minkowski_distance_f32(const float32_t *pA,const float32_t *pB, int32_t order, uint32_t blockSize)
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/DistanceFunctions/DistanceFunctions.c: 9 warnings, 30 errors
+compiling DistanceFunctionsF16.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/DistanceFunctions/DistanceFunctionsF16.c: 9 warnings, 28 errors
+compiling FastMathFunctions.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+../Drivers/CMSIS/Include/core_cm4.h(81): error:  #35: #error directive: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+        #error "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/FastMathFunctions/FastMathFunctions.c: 9 warnings, 29 errors
+compiling FastMathFunctionsF16.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/FastMathFunctions/arm_vexp_f16.c(96): warning:  #1-D: last line of file ends without a newline
+   */
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/FastMathFunctions/FastMathFunctionsF16.c: 10 warnings, 28 errors
+compiling FilteringFunctions.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/filtering_functions.h(2000): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/filtering_functions.h(2013): error:  #757: function "int32_t"  is not a type name
+            int32_t *pTapDelay;           /**< points to the array of delay values.  The array is of length numTaps. */
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/FilteringFunctions/FilteringFunctions.c: 9 warnings, 30 errors
+compiling FilteringFunctionsF16.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/FilteringFunctions/FilteringFunctionsF16.c: 9 warnings, 28 errors
+compiling InterpolationFunctions.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/InterpolationFunctions/arm_bilinear_interp_f32.c(109): warning:  #174-D: expression has no effect
+      int32_t xIndex, yIndex, index;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/InterpolationFunctions/arm_bilinear_interp_f32.c(109): error:  #65: expected a ";"
+      int32_t xIndex, yIndex, index;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/InterpolationFunctions/arm_bilinear_interp_f32.c(113): error:  #20: identifier "xIndex" is undefined
+      xIndex = (int32_t) X;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/InterpolationFunctions/InterpolationFunctions.c: 10 warnings, 30 errors
+compiling InterpolationFunctionsF16.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/InterpolationFunctions/InterpolationFunctionsF16.c: 9 warnings, 28 errors
+compiling MatrixFunctions.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/matrix_functions.h(566): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/matrix_functions.h(581): error:  #757: function "int32_t"  is not a type name
+          int32_t shift,
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/MatrixFunctions/MatrixFunctions.c: 9 warnings, 30 errors
+compiling stm32f4xx_hal_sram.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling system_stm32f4xx.c...
+compiling MatrixFunctionsF16.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/MatrixFunctions/MatrixFunctionsF16.c(43): warning:  #1-D: last line of file ends without a newline
+  #include "arm_householder_f16.c"
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/MatrixFunctions/MatrixFunctionsF16.c: 10 warnings, 28 errors
+compiling stm32f4xx_hal_uart.c...
+compiling QuaternionMathFunctions.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/QuaternionMathFunctions/QuaternionMathFunctions.c: 9 warnings, 28 errors
+compiling SVMFunctions.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/svm_functions.h(65): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE float32_t arm_exponent_f32(float32_t x, int32_t nb)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/svm_functions.h(91): error:  #757: function "int32_t"  is not a type name
+    const int32_t   *classes;               /**< The two SVM classes */
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/SVMFunctions/SVMFunctions.c: 9 warnings, 30 errors
+compiling SVMFunctionsF16.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/SVMFunctions/SVMFunctionsF16.c: 9 warnings, 28 errors
+compiling StatisticsFunctions.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/StatisticsFunctions/arm_mean_q15.c(150): error:  #32: expression must have arithmetic type
+    *pResult = (q15_t) (sum / (int32_t) blockSize);
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/StatisticsFunctions/arm_mean_q15.c(150): error:  #18: expected a ")"
+    *pResult = (q15_t) (sum / (int32_t) blockSize);
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/StatisticsFunctions/StatisticsFunctions.c: 9 warnings, 30 errors
+compiling StatisticsFunctionsF16.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/StatisticsFunctions/StatisticsFunctionsF16.c: 9 warnings, 28 errors
+compiling SupportFunctions.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+../Drivers/CMSIS/Include/core_cm4.h(81): error:  #35: #error directive: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+        #error "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/SupportFunctions/SupportFunctions.c: 9 warnings, 29 errors
+compiling SupportFunctionsF16.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/SupportFunctions/SupportFunctionsF16.c: 9 warnings, 28 errors
+compiling TransformFunctions.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+../Drivers/CMSIS/Include/core_cm4.h(81): error:  #35: #error directive: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+        #error "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/TransformFunctions/TransformFunctions.c: 9 warnings, 29 errors
+compiling TransformFunctionsF16.c...
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(212): warning:  #47-D: incompatible redefinition of macro "__PKHBT"  (declared at line 852 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHBT(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0x0000FFFF) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(214): warning:  #47-D: incompatible redefinition of macro "__PKHTB"  (declared at line 855 of "../Drivers/CMSIS/Include/cmsis_armcc.h")
+    #define __PKHTB(ARG1, ARG2, ARG3) ( (((int32_t)(ARG1) <<    0) & (int32_t)0xFFFF0000) | \
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #79: expected a type specifier
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #101: "int32_t" has already been declared in the current scope
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(561): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+    __STATIC_FORCEINLINE int32_t __SMMLA(
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "sum" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "x" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/none.h(566): error:  #20: identifier "y" is undefined
+      return (sum + (int32_t) (((int64_t) x * y) >> 32));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): warning:  #174-D: expression has no effect
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(111): error:  #65: expected a ";"
+      int32_t tempVal = 0;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(138): error:  #20: identifier "tempVal" is undefined
+        tempVal = (((q31_t) in * out) >> 15);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(159): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE  void arm_norm_64_to_32u(uint64_t in, int32_t * normalized, int32_t *norm)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): warning:  #174-D: expression has no effect
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(161): error:  #65: expected a ";"
+      int32_t     n1;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): warning:  #174-D: expression has no effect
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(162): error:  #65: expected a ";"
+      int32_t     hi = (int32_t) (in >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): warning:  #174-D: expression has no effect
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(163): error:  #65: expected a ";"
+      int32_t     lo = (int32_t) ((in << 32) >> 32);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "n1" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(165): error:  #20: identifier "hi" is undefined
+      n1 = __CLZ((uint32_t)hi) - 32;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(171): error:  #20: identifier "lo" is undefined
+          n1 = __CLZ((uint32_t)lo);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(207): error:  #20: identifier "lo" is undefined
+          *normalized = (int32_t)(((uint32_t)lo) >> n1) | (hi << (32 - n1));
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(211): error:  #757: function "int32_t"  is not a type name
+  __STATIC_INLINE int32_t arm_div_int64_to_int32(int64_t num, int32_t den)
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): warning:  #174-D: expression has no effect
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(213): error:  #65: expected a ";"
+      int32_t   result;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): warning:  #174-D: expression has no effect
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(215): error:  #65: expected a ";"
+      int32_t   normalized;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): warning:  #174-D: expression has no effect
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(216): error:  #65: expected a ";"
+      int32_t   norm;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "normalized" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(230): error:  #20: identifier "norm" is undefined
+      arm_norm_64_to_32u(absNum, &normalized, &norm);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #20: identifier "result" is undefined
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(235): error:  #65: expected a ";"
+          result = (int32_t) num / den;
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(240): error:  #20: identifier "result" is undefined
+          result = (int32_t) (num / den);
+D:\keil5\ARM\CMSIS-DSP\1.14.2\Include\dsp/utils.h(242): error:  #20: identifier "result" is undefined
+      return result;
+D:/keil5/ARM/CMSIS-DSP/1.14.2/Source/TransformFunctions/TransformFunctionsF16.c: 9 warnings, 28 errors
+"2023_D_SignalModulation__\2023_D_SignalModulation__.axf" - 746 Error(s), 237 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS-DSP.1.14.2.pack
+                ARM.CMSIS-DSP.1.14.2
+                CMSIS Embedded Compute Library
+   * Component: DSP Variant: Source Version: 1.14.2
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_2023_D_SignalModulation__
+  D:/keil5/ARM/CMSIS-DSP/1.14.2/Include
+  D:/keil5/ARM/CMSIS-DSP/1.14.2/PrivateInclude
+  D:/keil5/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  D:/keil5/Keil/STM32F4xx_DFP/2.15.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+
+   * Component: ARM::CMSIS:DSP:Source:1.14.2
+      Include file:  Include/arm_math_f16.h
+      Source file:   Source/BayesFunctions/BayesFunctions.c
+      Include file:  Include/arm_const_structs.h
+      Source file:   Source/BasicMathFunctions/BasicMathFunctions.c
+      Include file:  Include/arm_const_structs_f16.h
+      Source file:   Source/CommonTables/CommonTables.c
+      Include file:  Include/arm_common_tables.h
+      Include file:  Include/arm_math.h
+      Include file:  Include/arm_common_tables_f16.h
+      Source file:   Source/QuaternionMathFunctions/QuaternionMathFunctions.c
+      Source file:   Source/DistanceFunctions/DistanceFunctions.c
+      Source file:   Source/FastMathFunctions/FastMathFunctions.c
+      Source file:   Source/MatrixFunctions/MatrixFunctionsF16.c
+      Source file:   Source/CommonTables/CommonTablesF16.c
+      Source file:   Source/StatisticsFunctions/StatisticsFunctionsF16.c
+      Source file:   Source/SupportFunctions/SupportFunctions.c
+      Source file:   Source/SVMFunctions/SVMFunctionsF16.c
+      Source file:   Source/InterpolationFunctions/InterpolationFunctions.c
+      Source file:   Source/ComplexMathFunctions/ComplexMathFunctionsF16.c
+      Source file:   Source/MatrixFunctions/MatrixFunctions.c
+      Source file:   Source/SupportFunctions/SupportFunctionsF16.c
+      Source file:   Source/ComplexMathFunctions/ComplexMathFunctions.c
+      Source file:   Source/DistanceFunctions/DistanceFunctionsF16.c
+      Source file:   Source/SVMFunctions/SVMFunctions.c
+      Source file:   Source/BayesFunctions/BayesFunctionsF16.c
+      Source file:   Source/ControllerFunctions/ControllerFunctions.c
+      Source file:   Source/BasicMathFunctions/BasicMathFunctionsF16.c
+      Source file:   Source/InterpolationFunctions/InterpolationFunctionsF16.c
+      Source file:   Source/FilteringFunctions/FilteringFunctionsF16.c
+      Source file:   Source/TransformFunctions/TransformFunctionsF16.c
+      Source file:   Source/FastMathFunctions/FastMathFunctionsF16.c
+      Source file:   Source/TransformFunctions/TransformFunctions.c
+      Source file:   Source/FilteringFunctions/FilteringFunctions.c
+      Source file:   Source/StatisticsFunctions/StatisticsFunctions.c
+Target not created.
+Build Time Elapsed:  00:00:13
+</pre>
+</body>
+</html>

@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"tft-lcd\startup_stm32f103xe.o"
+"tft-lcd\main.o"
+"tft-lcd\gpio.o"
+"tft-lcd\fsmc.o"
+"tft-lcd\stm32f1xx_it.o"
+"tft-lcd\stm32f1xx_hal_msp.o"
+"tft-lcd\lcd.o"
+"tft-lcd\stm32f1xx_hal_gpio_ex.o"
+"tft-lcd\stm32f1xx_ll_fsmc.o"
+"tft-lcd\stm32f1xx_hal.o"
+"tft-lcd\stm32f1xx_hal_rcc.o"
+"tft-lcd\stm32f1xx_hal_rcc_ex.o"
+"tft-lcd\stm32f1xx_hal_gpio.o"
+"tft-lcd\stm32f1xx_hal_dma.o"
+"tft-lcd\stm32f1xx_hal_cortex.o"
+"tft-lcd\stm32f1xx_hal_pwr.o"
+"tft-lcd\stm32f1xx_hal_flash.o"
+"tft-lcd\stm32f1xx_hal_flash_ex.o"
+"tft-lcd\stm32f1xx_hal_exti.o"
+"tft-lcd\stm32f1xx_hal_sram.o"
+"tft-lcd\stm32f1xx_hal_tim.o"
+"tft-lcd\stm32f1xx_hal_tim_ex.o"
+"tft-lcd\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "TFT-LCD\TFT-LCD.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TFT-LCD.map" -o TFT-LCD\TFT-LCD.axf

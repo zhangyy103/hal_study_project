@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"relay\startup_stm32f103xe.o"
+"relay\main.o"
+"relay\gpio.o"
+"relay\usart.o"
+"relay\stm32f1xx_it.o"
+"relay\stm32f1xx_hal_msp.o"
+"relay\stm32f1xx_hal_gpio_ex.o"
+"relay\stm32f1xx_hal_tim.o"
+"relay\stm32f1xx_hal_tim_ex.o"
+"relay\stm32f1xx_hal_uart.o"
+"relay\stm32f1xx_hal.o"
+"relay\stm32f1xx_hal_rcc.o"
+"relay\stm32f1xx_hal_rcc_ex.o"
+"relay\stm32f1xx_hal_gpio.o"
+"relay\stm32f1xx_hal_dma.o"
+"relay\stm32f1xx_hal_cortex.o"
+"relay\stm32f1xx_hal_pwr.o"
+"relay\stm32f1xx_hal_flash.o"
+"relay\stm32f1xx_hal_flash_ex.o"
+"relay\stm32f1xx_hal_exti.o"
+"relay\system_stm32f1xx.o"
+--strict --scatter "RELAY\RELAY.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RELAY.map" -o RELAY\RELAY.axf
