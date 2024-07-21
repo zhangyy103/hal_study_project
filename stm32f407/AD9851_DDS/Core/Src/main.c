@@ -90,13 +90,19 @@ int main(void)
   AD985x_Init(AD9851, SERIAL); // 初始化控制AD9851需要用到的IO口,设置为串行通讯
   // 程序兼容AD9850和AD9851模块及串并行通讯；填入不同参数初始化即可
 
-  AD985x_SetFre_Phase (20000, 8); // 设置输出频率1000Hz,相位90度
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+	int fre = 10000;
+	int swi = 1;
   while (1)
   {
+		AD985x_SetFre_Phase (fre, 8); // 设置输出频率1000Hz,相位90度
+		fre += 50 * swi;
+		if(fre > 500000) swi = -1;
+		if(fre < 10000) swi = 1;
+		HAL_Delay(2);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
