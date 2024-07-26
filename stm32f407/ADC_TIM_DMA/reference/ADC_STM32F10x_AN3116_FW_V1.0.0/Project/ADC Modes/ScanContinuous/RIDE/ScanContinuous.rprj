@@ -1,0 +1,4 @@
+
+<Project Header="Project 'ScanContinuous" Path=".\ScanContinuous.rprj" Project="Yes" OutputFile="" sate="96" ActiveApp="ScanContinuous" >
+	<ApplicationBuild Header="ScanContinuous" Extern=".\ScanContinuous.rapp" Path=".\ScanContinuous.rapp" OutputFile=".\STM3210C-EVAL\ScanContinuous.elf" sate="98" Config="STM3210C-EVAL" />
+</Project>

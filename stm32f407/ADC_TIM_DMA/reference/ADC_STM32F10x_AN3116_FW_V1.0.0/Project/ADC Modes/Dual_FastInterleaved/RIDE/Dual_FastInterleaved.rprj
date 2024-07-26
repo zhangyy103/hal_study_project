@@ -1,0 +1,4 @@
+
+<Project Header="Project 'Dual_FastInterleaved" Path=".\Dual_FastInterleaved.rprj" Project="Yes" OutputFile="" sate="96" ActiveApp="Dual_FastInterleaved" >
+	<ApplicationBuild Header="Dual_FastInterleaved" Extern=".\Dual_FastInterleaved.rapp" Path=".\Dual_FastInterleaved.rapp" OutputFile=".\STM3210C-EVAL\Dual_FastInterleaved.elf" sate="98" Config="STM3210C-EVAL" />
+</Project>

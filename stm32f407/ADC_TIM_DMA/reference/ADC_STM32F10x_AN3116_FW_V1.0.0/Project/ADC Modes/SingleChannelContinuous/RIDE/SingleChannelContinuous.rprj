@@ -1,0 +1,4 @@
+
+<Project Header="Project 'SingleChannelContinuous" Path=".\SingleChannelContinuous.rprj" Project="Yes" OutputFile="" sate="96" ActiveApp="SingleChannelContinuous" >
+	<ApplicationBuild Header="SingleChannelContinuous" Extern=".\SingleChannelContinuous.rapp" Path=".\SingleChannelContinuous.rapp" OutputFile=".\STM3210C-EVAL\SingleChannelContinuous.elf" sate="98" Config="STM3210C-EVAL" />
+</Project>

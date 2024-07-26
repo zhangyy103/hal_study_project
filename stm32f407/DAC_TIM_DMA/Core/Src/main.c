@@ -135,6 +135,7 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
 	char rece_data;
+	char pre_rece_data;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -171,7 +172,7 @@ int main(void)
   while (1)
   {
 		scanf("%c", &rece_data);
-		HAL_DAC_Stop_DMA(&hdac, DAC_CHANNEL_1);
+		if(pre_rece_data != rece_data)HAL_DAC_Stop_DMA(&hdac, DAC_CHANNEL_1);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

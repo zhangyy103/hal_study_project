@@ -1,0 +1,17 @@
+fir_iir_dsp\bayesfunctions.o: D:\keil_pack\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\BayesFunctions\BayesFunctions.c
+fir_iir_dsp\bayesfunctions.o: D:\keil_pack\ARM\CMSIS\5.8.0\CMSIS\DSP\Source\BayesFunctions\arm_gaussian_naive_bayes_predict_f32.c
+fir_iir_dsp\bayesfunctions.o: D:\keil_pack\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/bayes_functions.h
+fir_iir_dsp\bayesfunctions.o: D:\keil_pack\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math_types.h
+fir_iir_dsp\bayesfunctions.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+fir_iir_dsp\bayesfunctions.o: D:\keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+fir_iir_dsp\bayesfunctions.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+fir_iir_dsp\bayesfunctions.o: D:\keil_v5\ARM\ARMCC\Bin\..\include\string.h
+fir_iir_dsp\bayesfunctions.o: D:\keil_v5\ARM\ARMCC\Bin\..\include\math.h
+fir_iir_dsp\bayesfunctions.o: D:\keil_v5\ARM\ARMCC\Bin\..\include\float.h
+fir_iir_dsp\bayesfunctions.o: D:\keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+fir_iir_dsp\bayesfunctions.o: D:\keil_pack\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math_memory.h
+fir_iir_dsp\bayesfunctions.o: D:\keil_pack\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/none.h
+fir_iir_dsp\bayesfunctions.o: D:\keil_pack\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/utils.h
+fir_iir_dsp\bayesfunctions.o: D:\keil_pack\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/statistics_functions.h
+fir_iir_dsp\bayesfunctions.o: D:\keil_pack\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/basic_math_functions.h
+fir_iir_dsp\bayesfunctions.o: D:\keil_pack\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/fast_math_functions.h

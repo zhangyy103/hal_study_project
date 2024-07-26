@@ -27,6 +27,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
+#include "stm32f4xx_hal_adc_ex.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -36,7 +37,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#define ADC_NUM 200
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -53,7 +54,7 @@ int fputc(int ch, FILE *f)
   return ch;
 }
 
-uint16_t adc_buff[200];//存放ADC采集的数据
+uint16_t adc_buff[ADC_NUM];//存放ADC采集的数据
 /* 
 AdcConvEnd用来检测ADC是否采集完毕
 0：没有采集完毕
@@ -108,22 +109,25 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start(&htim3);                           //开启定时器3
-  HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adc_buff, 200); //让ADC1去采集200个数，存放到adc_buff数组里
-  while (!AdcConvEnd);                                   //等待转换完毕 
-  for (uint16_t i = 0; i < 200; i++)
-  {
-    printf("%.3f\r\n", adc_buff[i] * 3.3 / 4095); //数据打印，查看结果
-  }
-
+	//HAL_StatusTypeDef HAL_ADCEx_Calibration_Start(ADC_HandleTypeDef* hadc, uint32_t SingleDiff);
+	//stm32f4xx_hal_adc_ex.c
+  HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adc_buff, ADC_NUM); //让ADC1去采集200个数，存放到adc_buff数组里
+	
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+		while (!AdcConvEnd);                                   //等待转换完毕 
+		for (uint16_t i = 0; i < ADC_NUM; i++){
+			printf("%.3f\r\n", adc_buff[i] * 3.3 / 4095); //数据打印，查看结果
+		}
+		
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+		HAL_Delay(500);
   }
   /* USER CODE END 3 */
 }
@@ -151,7 +155,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
   RCC_OscInitStruct.PLL.PLLM = 8;
-  RCC_OscInitStruct.PLL.PLLN = 72;
+  RCC_OscInitStruct.PLL.PLLN = 168;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
   RCC_OscInitStruct.PLL.PLLQ = 4;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
@@ -165,10 +169,10 @@ void SystemClock_Config(void)
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
-  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV4;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_5) != HAL_OK)
   {
     Error_Handler();
   }

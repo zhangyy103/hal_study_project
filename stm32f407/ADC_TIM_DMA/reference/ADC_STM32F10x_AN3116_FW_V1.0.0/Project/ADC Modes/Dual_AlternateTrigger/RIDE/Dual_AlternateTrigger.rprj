@@ -1,0 +1,4 @@
+
+<Project Header="Project 'Dual_AlternateTrigger" Path=".\Dual_AlternateTrigger.rprj" Project="Yes" OutputFile="" sate="96" ActiveApp="Dual_AlternateTrigger" >
+	<ApplicationBuild Header="Dual_AlternateTrigger" Extern=".\Dual_AlternateTrigger.rapp" Path=".\Dual_AlternateTrigger.rapp" OutputFile=".\STM3210C-EVAL\Dual_AlternateTrigger.elf" sate="98" Config="STM3210C-EVAL" />
+</Project>

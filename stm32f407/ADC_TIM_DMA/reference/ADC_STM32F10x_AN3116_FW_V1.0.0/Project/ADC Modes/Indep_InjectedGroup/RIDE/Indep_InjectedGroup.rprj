@@ -1,0 +1,4 @@
+
+<Project Header="Project 'Indep_InjectedGroup" Path=".\Indep_InjectedGroup.rprj" Project="Yes" OutputFile="" sate="96" ActiveApp="Indep_InjectedGroup" >
+	<ApplicationBuild Header="Indep_InjectedGroup" Extern=".\Indep_InjectedGroup.rapp" Path=".\Indep_InjectedGroup.rapp" OutputFile=".\STM3210C-EVAL\Indep_InjectedGroup.elf" sate="98" Config="STM3210C-EVAL" />
+</Project>

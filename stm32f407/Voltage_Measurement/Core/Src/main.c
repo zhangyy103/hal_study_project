@@ -163,7 +163,7 @@ int main(void)
     }
     ad1 = (ad1/50)*3.3f/4096;
     ad2 = (ad2/50)*3.3f/4096;
-	printf("%.3f \r\n", ad1);
+	printf("%.5f \r\n", ad1);
 	
 	//sin += direction * 0.05;
     //if (sin >= 3.0f) {
@@ -176,7 +176,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	HAL_Delay(5);
+	HAL_Delay(1);
   }
   /* USER CODE END 3 */
 }

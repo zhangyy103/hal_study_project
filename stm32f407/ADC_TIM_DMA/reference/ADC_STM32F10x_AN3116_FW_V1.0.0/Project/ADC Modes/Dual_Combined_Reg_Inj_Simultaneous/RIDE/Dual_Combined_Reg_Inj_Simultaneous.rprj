@@ -1,0 +1,4 @@
+
+<Project Header="Project 'Dual_Combined_Reg_Inj_Simultaneous" Path=".\Dual_Combined_Reg_Inj_Simultaneous.rprj" Project="Yes" OutputFile="" sate="96" ActiveApp="Dual_Combined_Reg_Inj_Simultaneous" >
+	<ApplicationBuild Header="Dual_Combined_Reg_Inj_Simultaneous" Extern=".\Dual_Combined_Reg_Inj_Simultaneous.rapp" Path=".\Dual_Combined_Reg_Inj_Simultaneous.rapp" OutputFile=".\STM3210C-EVAL\Dual_Combined_Reg_Inj_Simultaneous.elf" sate="98" Config="STM3210C-EVAL" />
+</Project>

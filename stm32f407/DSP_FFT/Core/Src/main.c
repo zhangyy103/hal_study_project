@@ -102,7 +102,7 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 	for(i = 0; i < FFT_LEN; i++){
-		data[i] = sin(2 * 3.14 / FFT_LEN * i);
+		data[i] = 5 * sin(2 * 3.14 / FFT_LEN * i) + sin(200 * 3.14 / FFT_LEN *i);
 	}
   /* USER CODE END 2 */
 

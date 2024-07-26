@@ -99,28 +99,33 @@ int main(void)
   MX_ADC1_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
+	HAL_ADC_Start_DMA(&hadc1, (uint32_t*)&ADC_Value, 100);
   //以 DMA 方式开启 ADC 装换。HAL_ADC_Start_DMA() 函数第二个参数为数据存储起始地址，第三个参数为 DMA 传输数据的长度。
 /* USER CODE BEGIN 2 */
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  HAL_ADC_Start_DMA(&hadc1, (uint32_t*)&ADC_Value, 100);
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	HAL_Delay(1000);
+	HAL_Delay(5000);
 	for(i = 0,ad1 =0,ad2=0; i < 100;){
       ad1 += ADC_Value[i++];
       ad2 += ADC_Value[i++];
     }
     ad1 /= 50;
     ad2 /= 50;
-	printf("[\tmain]info:_value=%1.3fV\r\n",ADC_Value[0]*3.3f/4096);
-    printf("[\tmain]info:AD1_value=%1.3fV\r\n", ad1*3.3f/4096);
-    printf("[\tmain]info:AD2_value=%1.3fV\r\n", ad2*3.3f/4096);  
+	for(i = 0; i < 100; i++){
+		printf("%.5f\r\n,", (float)ADC_Value[i]);
+	}
+//		  for(int i = 0;i<100;i++){
+//         printf("%.3f\r\n",ADC_Value[i]*3.3f/4096);
+//      }
+		ad1 = 0;
+	  ad2 = 0;
   }
   /* USER CODE END 3 */
 }
