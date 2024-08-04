@@ -1,5 +1,5 @@
-ads1115\ads1115.o: ..\Core\Src\ADS1115.c
-ads1115\ads1115.o: ../Core/Inc/ADS1115.h
+ads1115\ads1115.o: ..\Core\Src\ads1115.c
+ads1115\ads1115.o: ../Core/Inc/ads1115.h
 ads1115\ads1115.o: ../Core/Inc/i2c.h
 ads1115\ads1115.o: ../Core/Inc/main.h
 ads1115\ads1115.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
@@ -35,4 +35,3 @@ ads1115\ads1115.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 ads1115\ads1115.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 ads1115\ads1115.o: ../Core/Inc/usart.h
 ads1115\ads1115.o: D:\keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-ads1115\ads1115.o: D:\keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

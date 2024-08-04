@@ -1,12 +1,12 @@
 --cpu=Cortex-M4.fp.sp
 "ads1115\startup_stm32f407xx.o"
+"ads1115\ads1115.o"
 "ads1115\main.o"
 "ads1115\gpio.o"
 "ads1115\i2c.o"
 "ads1115\usart.o"
 "ads1115\stm32f4xx_it.o"
 "ads1115\stm32f4xx_hal_msp.o"
-"ads1115\i2c_ads1115.o"
 "ads1115\stm32f4xx_hal_i2c.o"
 "ads1115\stm32f4xx_hal_i2c_ex.o"
 "ads1115\stm32f4xx_hal_rcc.o"
@@ -26,7 +26,7 @@
 "ads1115\stm32f4xx_hal_tim_ex.o"
 "ads1115\stm32f4xx_hal_uart.o"
 "ads1115\system_stm32f4xx.o"
---library_type=microlib --strict --scatter "ADS1115\ADS1115.sct"
+--strict --scatter "ADS1115\ADS1115.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "ADS1115.map" -o ADS1115\ADS1115.axf

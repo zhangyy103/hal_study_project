@@ -94,14 +94,14 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-	int fre = 10000;
+	int fre = 30000000;
 	int swi = 1;
   while (1)
   {
 		AD985x_SetFre_Phase (fre, 8); // 设置输出频率1000Hz,相位90度
-		fre += 50 * swi;
-		if(fre > 500000) swi = -1;
-		if(fre < 10000) swi = 1;
+		fre += 5000 * swi;
+		if(fre > 40000000) swi = -1;
+		if(fre < 30000000) swi = 1;
 		HAL_Delay(2);
     /* USER CODE END WHILE */
 

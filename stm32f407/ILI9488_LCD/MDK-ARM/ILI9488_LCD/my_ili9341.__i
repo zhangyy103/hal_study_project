@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include
+-I.\RTE\_ILI9488_LCD
+-ID:\keil_pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+-ID:\keil_pack\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx
+-o ili9488_lcd\my_ili9341.o --omf_browse ili9488_lcd\my_ili9341.crf --depend ili9488_lcd\my_ili9341.d "..\Core\Src\MY_ILI9341.c"

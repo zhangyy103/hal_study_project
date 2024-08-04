@@ -33,6 +33,5 @@ ads1115\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 ads1115\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 ads1115\main.o: ../Core/Inc/i2c.h
 ads1115\main.o: ../Core/Inc/usart.h
-ads1115\main.o: D:\keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ads1115\main.o: ../Core/Inc/gpio.h
-ads1115\main.o: ../Core/Inc/i2c_ads1115.h
+ads1115\main.o: ../Core/Inc/ads1115.h

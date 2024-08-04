@@ -66,8 +66,8 @@ float get_max_temperature(){
 			}
 			sprintf(buffer, "maxTemperature=%.1f", sum);
 			LCD_Clear(WHITE);
-		    LCD_ShowString(30,40,310,24,24, "input max temp");
-		    LCD_ShowString(5,120,310,24,24, buffer);
+		    LCD_ShowString(30,40,310,24,24, (uint8_t *)"input max temp");
+		    LCD_ShowString(5,120,310,24,24, (uint8_t *)buffer);
 			if (key == 254 && key != pre_key) {point = 10.0;}
 			HAL_Delay(50);
 		}
@@ -137,11 +137,11 @@ int main(void)
   /* USER CODE BEGIN 2 */
   TFTLCD_Init();
   
-  while(DHT11_Init())
-  {
-    printf("DHT11 Checked failed!!!\r\n");
-    HAL_Delay(500);
-  }
+//  while(DHT11_Init())
+//  {
+//    printf("DHT11 Checked failed!!!\r\n");
+//    HAL_Delay(500);
+//  }
     printf("DHT11 Checked Sucess!!!\r\n");
   /* USER CODE END 2 */
 
@@ -156,7 +156,7 @@ int main(void)
 	memset(buffer, 0, sizeof(buffer));
     sprintf(buffer, "maxTemperature=%.1f", max_temperature);
 	LCD_Clear(WHITE);
-	LCD_ShowString(5,40,310,24,24, buffer);
+	LCD_ShowString(5,40,310,24,24, (uint8_t *)buffer);
     printf("max temperature =%.1f \r\n",max_temperature);
 	
 	
@@ -169,7 +169,7 @@ int main(void)
     // 使用 sprintf 将浮点数格式化到字符串中
 	memset(buffer, 0, sizeof(buffer));
     sprintf(buffer, "Temperature=%.1f", temp_float);
-	LCD_ShowString(30,120,210,24,24, buffer);
+	LCD_ShowString(30,120,210,24,24, (uint8_t *)buffer);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

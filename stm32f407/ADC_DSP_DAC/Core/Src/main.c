@@ -133,7 +133,7 @@ int main(void)
 	
 	
 	HAL_TIM_Base_Start(&htim6);
-  HAL_DAC_Start_DMA(&hdac, DAC_CHANNEL_1, (uint32_t *)dac_buff, DAC_NUM, DAC_ALIGN_12B_R);
+  HAL_DAC_Start_DMA(&hdac, DAC_CHANNEL_1, (uint32_t *)adc_buff, DAC_NUM, DAC_ALIGN_12B_R);
   while (1)
   {
 		for(i = 0; i < ADC_NUM; i++){
@@ -197,11 +197,11 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 uint8_t str[] = "Callback running \r\n";
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
-    if (hadc->Instance == ADC1) {
-			for(i = 0; i < DAC_NUM; i++){
-				dac_buff[i] = adc_buff[i] + adc_buff[i];
-			}
-    }
+//    if (hadc->Instance == ADC1) {
+//			for(i = 0; i < DAC_NUM; i++){
+//				dac_buff[i] = adc_buff[i] + adc_buff[i];
+//			}
+//    }
 }
 /* USER CODE END 4 */
 
