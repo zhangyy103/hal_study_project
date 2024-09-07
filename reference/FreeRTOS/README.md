@@ -1,6 +1,6 @@
 # FreeRTOS
 
-## 创建线程
+## 创建任务
 **1. 动态分配内存**
 ```c
 	BaseType_t xTaskCreate(	TaskFunction_t pxTaskCode,
@@ -94,5 +94,42 @@ void StartTask(void *arg){
 // 获取任务栈的高水位标记
 UBaseType_t uxHighWaterMark = uxTaskGetStackHighWaterMark(xYourTaskHandle);
 ```
-**3.
+**3.启用栈溢出检测**
+```c
+#define configCHECK_FOR_STACK_OVERFLOW 1  // 或 2，根据需要选择检测级别
 
+void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName) {
+    // 处理栈溢出，例如重启系统或记录错误信息
+    printf("Stack overflow in task: %s\n", pcTaskName);
+    for (;;);  // 停止系统
+}
+```
+
+## 任务优先级和 Tick
+**1. 任务优先级**  
+当我们使用`xTaskCreate()` API函数创建一个任务的时候，会为任务赋予一个初始的优先级，当然这个优先级可以在调度器启动后，我们可以使用`vTaskPrioritySet()` API函数来进行优先级修改的。
+```c
+void vTaskPrioritySet( TaskHandle_t xTask, UBaseType_t uxNewPriority );
+```
+其中`xTask`参数是传递进某个任务的句柄，NULL则表示修改自己的优先级。  
+`uxNewPriority`参数表示新设置的优先级，取值范围`0~(configMAX_PRIORITIES – 1)`。数值越大 任务的优先级越高，也就是任务更优先执行
+```c
+UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask );
+```
+`xTask`参数是某个任务句柄，NULL表示获取自己的优先级。返回值就是该任务的优先级。
+
+## 两个Delay函数
+```c
+void vTaskDelay( const TickType_t xTicksToDelay )
+```
+xTicksToDelay：任务阻塞的时间，以系统节拍（tick）为单位。
+
+在函数实现中，vTaskDelay中有挂机函数vTaskSuspendAll();  和恢复函数xTaskResumeAll();  
+所以freertos中的延时函数只是把任务挂起了，等延时时间到，在把任务恢复。
+保证了操作系统的实时性
+```c
+void vTaskDelayUntil(TickType_t *pxPreviousWakeTime, const TickType_t xTimeIncrement);
+```
+vTaskDelayUntil 函数使调用任务进入阻塞状态，直到指定的时间点。这个函数适用于需要精确定时的任务。
+
+## 
