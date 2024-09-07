@@ -10,6 +10,7 @@
 "test_stm32f407zgt6\my_func2.o"
 "test_stm32f407zgt6\my_func1.o"
 "test_stm32f407zgt6\my_default_func.o"
+"test_stm32f407zgt6\my_applyfunc_of_func12.o"
 "test_stm32f407zgt6\stm32f4xx_hal_rcc.o"
 "test_stm32f407zgt6\stm32f4xx_hal_rcc_ex.o"
 "test_stm32f407zgt6\stm32f4xx_hal_flash.o"

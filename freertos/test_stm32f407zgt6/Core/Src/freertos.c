@@ -28,6 +28,7 @@
 #include "my_func1.h"
 #include "my_func2.h"
 #include "my_default_func.h"
+#include "my_applyfunc_of_func12.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -54,7 +55,7 @@ static StaticTask_t g_TCBOfTask2;
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
-  .name = "defaultTask",
+	.name = "defaultTask",
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
@@ -63,6 +64,12 @@ const osThreadAttr_t defaultTask_attributes = {
 /* USER CODE BEGIN FunctionPrototypes */
 void StartTask1(void *arg);
 void StartTask2(void *arg);
+void StartApplyTask(void *arg);
+
+struct TaskInfo{
+	uint8_t task_name1[20];
+	uint8_t task_name2[20];
+};
 
 /* USER CODE END FunctionPrototypes */
 
@@ -79,6 +86,7 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN Init */
 	TaskHandle_t xTask1Handle;
 	TaskHandle_t xTask2Handle;
+	TaskHandle_t xApplyTaskHandle;
 	
 	BaseType_t ret;
   /* USER CODE END Init */
@@ -114,6 +122,11 @@ void MX_FREERTOS_Init(void) {
 	xTask2Handle = xTaskCreateStatic(StartTask2, "Task2", 128, NULL, osPriorityNormal, g_pucStackOfTask2, &g_TCBOfTask2);
 	if (xTask2Handle != NULL){;}
 	else {;}
+		
+	// creat my applytask threads with the dynamically manage memory
+	ret = xTaskCreate(StartApplyTask, "ApplyTask", 128, NULL, osPriorityNormal, &xApplyTaskHandle);
+	if (ret == pdPASS){;}
+	else {;}
 	
   /* USER CODE END RTOS_THREADS */
 
@@ -133,9 +146,11 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
+	my_default_func_init();
   /* Infinite loop */
   for(;;)
   {
+		my_default_func();
     osDelay(1);
   }
   /* USER CODE END StartDefaultTask */
@@ -145,11 +160,24 @@ void StartDefaultTask(void *argument)
 /* USER CODE BEGIN Application */
 void StartTask1(void *arg){
 	my_func1_init();
-	
+#if 0	
+	// get the handle of task
+	TaskHandle_t xTaskHandle = xTaskGetCurrentTaskHandle();
+	// get the high-water mark of the task stack
+	UBaseType_t uxHighWaterMark = uxTaskGetStackHighWaterMark(xTaskHandle);
+	// print the high-water mark of the task stack
+	printf("Task stack high water mark: %u\n", uxHighWaterMark);
+  // handle stack usage as needed
+	if (uxHighWaterMark < SOME_THRESHOLD) {
+
+					printf("Warning: Task stack usage is high!\n");
+			}
+#endif	
 	for(;;){
 		my_func1();
 	}
 }
+
 void StartTask2(void *arg){
 	my_func2_init();
 	
@@ -157,5 +185,36 @@ void StartTask2(void *arg){
 		my_func2();
 	}
 }
+
+void StartApplyTask(void *arg){
+	my_applyfunc_of_func12_init();
+	
+	struct TaskInfo *pInfo = arg;
+	// use of your argument
+	// this is a easy example which can be used in detect of the string is empty 
+	if(pInfo->task_name1[0] != '\0' && pInfo->task_name2[0] != '\0'){
+		
+	}
+	
+	for(;;){
+		// apply of your argument
+		my_applyfunc_of_func12(arg);
+		
+		// avoid conflicting access to global variables and peripheral
+		vTaskDelay(100);
+	}
+}
+
+#if 0
+// if you want enable the detect of the out of stack resive the macro in FreeRTOSConfig.h else will lead the warnning of redefintion
+// #define configCHECK_FOR_STACK_OVERFLOW 1  // enable the detect of the out of stack
+
+// This is a hook func which will as seem as callback function 
+void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName) {
+    // deal the out of stack
+    //printf("Stack overflow in task: %s\n", pcTaskName);
+    for (;;);  // ????
+}
+#endif
 /* USER CODE END Application */
 

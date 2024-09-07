@@ -445,6 +445,11 @@
               <FileType>1</FileType>
               <FilePath>..\Core\Src\my_default_func.c</FilePath>
             </File>
+            <File>
+              <FileName>my_applyfunc_of_func12.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\my_applyfunc_of_func12.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

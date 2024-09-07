@@ -45,3 +45,4 @@ test_stm32f407zgt6\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_
 test_stm32f407zgt6\freertos.o: ../Core/Inc/my_func1.h
 test_stm32f407zgt6\freertos.o: ../Core/Inc/my_func2.h
 test_stm32f407zgt6\freertos.o: ../Core/Inc/my_default_func.h
+test_stm32f407zgt6\freertos.o: ../Core/Inc/my_applyfunc_of_func12.h
