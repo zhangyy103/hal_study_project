@@ -25,6 +25,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "queue.h"
+
 #include "my_func1.h"
 #include "my_func2.h"
 #include "my_default_func.h"
@@ -66,10 +68,7 @@ void StartTask1(void *arg);
 void StartTask2(void *arg);
 void StartApplyTask(void *arg);
 
-struct TaskInfo{
-	uint8_t task_name1[20];
-	uint8_t task_name2[20];
-};
+QueueHandle_t xQueue;
 
 /* USER CODE END FunctionPrototypes */
 
@@ -105,6 +104,7 @@ void MX_FREERTOS_Init(void) {
 
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
+	xQueue = xQueueCreate(10, sizeof(int));
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
@@ -173,6 +173,7 @@ void StartTask1(void *arg){
 					printf("Warning: Task stack usage is high!\n");
 			}
 #endif	
+	xQueueSend(xQueue, "task1", portMAX_DELAY);
 	for(;;){
 		my_func1();
 	}
@@ -181,6 +182,7 @@ void StartTask1(void *arg){
 void StartTask2(void *arg){
 	my_func2_init();
 	
+	xQueueSend(xQueue, "task2", portMAX_DELAY);
 	for(;;){
 		my_func2();
 	}
@@ -189,12 +191,12 @@ void StartTask2(void *arg){
 void StartApplyTask(void *arg){
 	my_applyfunc_of_func12_init();
 	
-	struct TaskInfo *pInfo = arg;
-	// use of your argument
-	// this is a easy example which can be used in detect of the string is empty 
-	if(pInfo->task_name1[0] != '\0' && pInfo->task_name2[0] != '\0'){
-		
+	void* receivedData;
+	
+	if (xQueueReceive(xQueue, receivedData, portMAX_DELAY) == pdTRUE) {
+			//printf("Received data: %d\n", receivedData);
 	}
+	
 	
 	for(;;){
 		// apply of your argument
